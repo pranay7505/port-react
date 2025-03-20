@@ -4,13 +4,14 @@ import Navbar from './components/Navbar'
 import Aboutme from './components/Aboutme'
 
 function App() {
-  return ( <div className='main-page' >
-    <Navbar/>
+  return ( <>
+    <HashRouter>
+      <Navbar/>
 
     <Aboutme/>
     <Skills />
-  </div>
-    
+    </HashRouter>
+  </>
   )
 };
 
